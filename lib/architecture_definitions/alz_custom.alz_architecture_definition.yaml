@@ -1,74 +1,74 @@
 "management_groups":
 - "archetypes":
   - "root_custom"
-  "display_name": "Azure Landing Zones"
+  "display_name": "ALZ Prince Lab"
   "exists": true
-  "id": "alz"
+  "id": "alzprince"
   "parent_id": null
 - "archetypes":
   - "platform_custom"
-  "display_name": "Platform"
+  "display_name": "Platform (Prince)"
   "exists": false
-  "id": "platform"
-  "parent_id": "alz"
+  "id": "alzprince-platform"
+  "parent_id": "alzprince"
 - "archetypes":
   - "landing_zones_custom"
-  "display_name": "Landing Zones"
+  "display_name": "Landing Zones (Prince)"
   "exists": false
-  "id": "landingzones"
-  "parent_id": "alz"
+  "id": "alzprince-landingzones"
+  "parent_id": "alzprince"
 - "archetypes":
   - "corp_custom"
-  "display_name": "Corp"
+  "display_name": "Corp (Prince)"
   "exists": false
-  "id": "corp"
-  "parent_id": "landingzones"
+  "id": "alzprince-corp"
+  "parent_id": "alzprince-landingzones"
 - "archetypes":
   - "online_custom"
-  "display_name": "Online"
+  "display_name": "Online (Prince)"
   "exists": false
-  "id": "online"
-  "parent_id": "landingzones"
+  "id": "alzprince-online"
+  "parent_id": "alzprince-landingzones"
 - "archetypes":
   - "local_custom"
-  "display_name": "Local"
+  "display_name": "Local (Prince)"
   "exists": false
-  "id": "local"
-  "parent_id": "landingzones"
+  "id": "alzprince-local"
+  "parent_id": "alzprince-landingzones"
 - "archetypes":
   - "sandbox_custom"
-  "display_name": "Sandbox"
+  "display_name": "Sandbox (Prince)"
   "exists": false
-  "id": "sandbox"
-  "parent_id": "alz"
+  "id": "alzprince-sandbox"
+  "parent_id": "alzprince"
 - "archetypes":
   - "security_custom"
-  "display_name": "Security"
+  "display_name": "Security (Prince)"
   "exists": false
-  "id": "security"
-  "parent_id": "platform"
+  "id": "alzprince-security"
+  "parent_id": "alzprince-platform"
 - "archetypes":
   - "management_custom"
-  "display_name": "Management"
+  "display_name": "Management (Prince)"
   "exists": false
-  "id": "management"
-  "parent_id": "platform"
+  "id": "alzprince-management"
+  "parent_id": "alzprince-platform"
 - "archetypes":
   - "connectivity_custom"
-  "display_name": "Connectivity"
+  "display_name": "Connectivity (Prince)"
   "exists": false
-  "id": "connectivity"
-  "parent_id": "platform"
+  "id": "alzprince-connectivity"
+  "parent_id": "alzprince-platform"
 - "archetypes":
   - "identity_custom"
-  "display_name": "Identity"
+  "display_name": "Identity (Prince)"
   "exists": false
-  "id": "identity"
-  "parent_id": "platform"
+  "id": "alzprince-identity"
+  "parent_id": "alzprince-platform"
 - "archetypes":
   - "decommissioned_custom"
-  "display_name": "Decommissioned"
+  "display_name": "Decommissioned (Prince)"
   "exists": false
-  "id": "decommissioned"
-  "parent_id": "alz"
+  "id": "alzprince-decommissioned"
+  "parent_id": "alzprince"
 "name": "alz_custom"
