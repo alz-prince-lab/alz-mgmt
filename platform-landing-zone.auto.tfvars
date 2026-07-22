@@ -144,25 +144,13 @@ management_group_settings = {
     */
   }
   subscription_placement = {
-    identity = {
-      subscription_id       = "$${subscription_id_identity}"
-      management_group_name = "identity"
-    }
-    connectivity = {
-      subscription_id       = "$${subscription_id_connectivity}"
-      management_group_name = "connectivity"
-    }
     management = {
       subscription_id       = "$${subscription_id_management}"
-      management_group_name = "management"
-    }
-    security = {
-      subscription_id       = "$${subscription_id_security}"
-      management_group_name = "security"
+      management_group_name = "alzprince-management"
     }
   }
   policy_assignments_to_modify = {
-    alz = {
+    alzprince = {
       policy_assignments = {
         Deploy-MDFC-Config-H224 = {
           parameters = {
@@ -182,21 +170,21 @@ management_group_settings = {
         }
       }
     }
-    connectivity = {
+    alzprince-connectivity = {
       policy_assignments = {
         Enable-DDoS-VNET = {
           creation_enabled = false
         }
       }
     }
-    landingzones = {
+    alzprince-landingzones = {
       policy_assignments = {
         Enable-DDoS-VNET = {
           creation_enabled = false
         }
       }
     }
-    corp = {
+    alzprince-corp = {
       policy_assignments = {
         Deploy-Private-DNS-Zones = {
           creation_enabled = false
